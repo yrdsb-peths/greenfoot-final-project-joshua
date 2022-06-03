@@ -1,10 +1,11 @@
 #Greenfoot project file
 class.Baby.image=baby2.png
 class.Hero.image=man.png
-editor.fx.0.height=0
-editor.fx.0.width=0
-editor.fx.0.x=0
-editor.fx.0.y=0
+class.MyWorld.image=brick.jpg
+editor.fx.0.height=737
+editor.fx.0.width=814
+editor.fx.0.x=360
+editor.fx.0.y=28
 height=551
 package.numDependencies=0
 package.numTargets=3
@@ -46,5 +47,5 @@ target3.y=0
 version=3.0.0
 width=813
 world.lastInstantiated=MyWorld
-xPosition=154
-yPosition=79
+xPosition=790
+yPosition=287
