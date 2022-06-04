@@ -15,15 +15,14 @@ public class Hero extends Actor
     String facing = "right";
     public void act()
     {
+        move(1);
         if(Greenfoot.isKeyDown("left"))
         {
-            move(-2);
-            facing = "left";
+            turn(-3);
         }
         else if(Greenfoot.isKeyDown("right"))
         {
-            move(2);
-            facing = "right";
+            turn(3);
         }
     }
 }
