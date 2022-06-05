@@ -18,10 +18,12 @@ public class Hero extends Actor
         move(1);
         if(Greenfoot.isKeyDown("left"))
         {
+            move(1);
             turn(-3);
         }
         else if(Greenfoot.isKeyDown("right"))
         {
+            move(1);
             turn(3);
         }
         
