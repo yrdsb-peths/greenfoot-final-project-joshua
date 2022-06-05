@@ -1,7 +1,10 @@
 #BlueJ class context
 comment0.target=MyWorld
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ MyWorld\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ The\ world\ of\ the\ game.\r\n\ \r\n\ @author\ (Joshua)\ \r\n\ @version\ (June\ 2022)\r\n
 comment1.params=
 comment1.target=MyWorld()
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ MyWorld.\r\n\ \r\n
-numComments=2
+comment2.params=
+comment2.target=void\ createHumpty()
+comment2.text=\r\n\ Spawn\ ramdom\ Humpty\r\n
+numComments=3

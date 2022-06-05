@@ -24,5 +24,18 @@ public class Hero extends Actor
         {
             turn(3);
         }
+        
+        // Remove Humpty when eaten
+        eat();
+    }
+    
+    public void eat()
+    {
+        if(isTouching(Humpty.class));
+        {
+            removeTouching(Humpty.class);
+            MyWorld world = (MyWorld) getWorld();
+            world.createHumpty();
+        }
     }
 }

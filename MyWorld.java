@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class MyWorld here.
+ * The world of the game.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Joshua) 
+ * @version (June 2022)
  */
 public class MyWorld extends World
 {
@@ -22,5 +22,19 @@ public class MyWorld extends World
         // Hero Object
         Hero hero = new Hero();
         addObject(hero, 300, 350);
+        
+        createHumpty();
+    }
+    
+    /**
+     * Spawn ramdom Humpty
+     */
+    public void createHumpty()
+    {        
+        // Humpty Object
+        Humpty humpty = new Humpty();
+        int x = Greenfoot.getRandomNumber(600);
+        int y = Greenfoot.getRandomNumber(300);
+        addObject(humpty, x, y);
     }
 }
