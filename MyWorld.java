@@ -23,7 +23,9 @@ public class MyWorld extends World
         Hero hero = new Hero();
         addObject(hero, 300, 350);
         
+        //Create Humpty
         createHumpty();
+        
     }
     
     /**
@@ -34,7 +36,7 @@ public class MyWorld extends World
         // Humpty Object
         Humpty humpty = new Humpty();
         int x = Greenfoot.getRandomNumber(600);
-        int y = Greenfoot.getRandomNumber(300);
+        int y = 0;
         addObject(humpty, x, y);
     }
 }
