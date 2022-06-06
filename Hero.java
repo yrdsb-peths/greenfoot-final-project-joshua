@@ -36,8 +36,6 @@ public class Hero extends Actor
         if(isTouching(Humpty.class));
         {
             removeTouching(Humpty.class);
-            MyWorld world = (MyWorld) getWorld();
-            world.createHumpty();
         }
     }
 }

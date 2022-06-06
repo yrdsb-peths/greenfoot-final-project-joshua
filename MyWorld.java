@@ -25,7 +25,6 @@ public class MyWorld extends World
         
         //Create Humpty
         createHumpty();
-        
     }
     
     /**
