@@ -38,6 +38,7 @@ public class Hero extends Actor
             removeTouching(Humpty.class);
             MyWorld world =(MyWorld) getWorld();
             world.createHumpty();
+            world.createCar();
             world.increaseScore();
         }
     }
