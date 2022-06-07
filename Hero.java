@@ -33,9 +33,12 @@ public class Hero extends Actor
     
     public void eat()
     {
-        if(isTouching(Humpty.class));
+        if(isTouching(Humpty.class))
         {
             removeTouching(Humpty.class);
+            MyWorld world =(MyWorld) getWorld();
+            world.createHumpty();
+            world.increaseScore();
         }
     }
 }
