@@ -29,6 +29,20 @@ public class MyWorld extends World
         
         //Create Humpty
         createHumpty();
+        
+        //Create Car
+        createCar();
+    }
+    
+    /**
+     * Spawn ramdom Car
+     */
+    public void createCar()
+    {
+        Car car = new Car();
+        int y = Greenfoot.getRandomNumber(600);
+        int x = 0;
+        addObject(car, x, y);
     }
     
     /**
