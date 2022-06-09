@@ -18,11 +18,13 @@ public class Humpty extends Actor
         // Add your action code here.
         setLocation(getX(), getY() + speed);
         
-        // Remove 
+        // Remove humpty when it crosses road
         MyWorld world = (MyWorld) getWorld();
         if(getY() >= world.getHeight())
         {
+            world.gameOver();
             world.removeObject(this);
         }
+        
     }
 }
