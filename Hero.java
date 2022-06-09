@@ -29,6 +29,14 @@ public class Hero extends Actor
         
         // Remove Humpty when eaten
         eat();
+        
+        //End game if Hero gets it by car
+        MyWorld world = (MyWorld) getWorld();
+        if(isTouching(Car.class))
+        {
+            world.gameOver();
+            world.removeObject(this);
+        }
     }
     
     public void eat()
