@@ -39,6 +39,7 @@ public class Hero extends Actor
             MyWorld world =(MyWorld) getWorld();
             world.createHumpty();
             world.createCar();
+            world.createCar();
             world.increaseScore();
         }
     }
