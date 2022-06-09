@@ -3,8 +3,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class Hero here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Joshua) 
+ * @version (June 2022)
  */
 public class Hero extends Actor
 {
@@ -12,6 +12,9 @@ public class Hero extends Actor
      * Act - do whatever the Hero wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    GreenfootSound crash = new GreenfootSound("crash.wav");
+    GreenfootSound save = new GreenfootSound("savehat.wav");
+    
     String facing = "right";
     public void act()
     {
@@ -36,6 +39,7 @@ public class Hero extends Actor
         {
             world.gameOver();
             world.removeObject(this);
+            crash.play();
         }
     }
     
@@ -49,6 +53,7 @@ public class Hero extends Actor
             world.createCar();
             world.createCar();
             world.increaseScore();
+            save.play();
         }
     }
 }
