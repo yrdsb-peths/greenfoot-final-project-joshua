@@ -64,7 +64,7 @@ public class MyWorld extends World
         scoreLabel.setValue(score);
         if(score % 5 == 0)
         {
-            level += 0.1;
+            level += 0.25;
         }
     }
     
@@ -75,6 +75,7 @@ public class MyWorld extends World
     {
         scoreLabel.setValue(score - 1);
     }
+    
     /**
      * Spawn ramdom Humpty
      */

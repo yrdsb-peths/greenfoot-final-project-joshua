@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Food for Hero.
+ * Person for Hero to Save.
  * 
  * @author (Joshua) 
  * @version (June 2022)
@@ -56,7 +56,6 @@ public class Humpty extends Actor
         //Decrese score if Humpty gets it by car
         if(isTouching(Car.class))
         {
-            world.decreaseScore();
             world.removeObject(this);
             world.createHumpty();
         }
