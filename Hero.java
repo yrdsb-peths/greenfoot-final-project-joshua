@@ -18,17 +18,7 @@ public class Hero extends Actor
     String facing = "right";
     public void act()
     {
-        move(1);
-        if(Greenfoot.isKeyDown("left"))
-        {
-            move(1);
-            turn(-3);
-        }
-        else if(Greenfoot.isKeyDown("right"))
-        {
-            move(1);
-            turn(3);
-        }
+        move();
         
         // Remove Humpty when eaten
         eat();
@@ -43,6 +33,25 @@ public class Hero extends Actor
         }
     }
     
+    public void move()
+    {
+        move(1);
+        if(Greenfoot.isKeyDown("left"))
+        {
+            move(1);
+            turn(-3);
+        }
+        if(Greenfoot.isKeyDown("right"))
+        {
+            move(1);
+            turn(3);
+        }
+        
+        if(Greenfoot.isKeyDown("down"))
+        {
+            move(-1);
+        }
+    }
     public void eat()
     {
         if(isTouching(Humpty.class))
