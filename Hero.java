@@ -20,8 +20,8 @@ public class Hero extends Actor
     {
         move();
         
-        // Remove Humpty when eaten
-        eat();
+        // Remove Humpty when saved
+        save();
         
         //End game if Hero gets it by car
         MyWorld world = (MyWorld) getWorld();
@@ -52,7 +52,11 @@ public class Hero extends Actor
             move(-1);
         }
     }
-    public void eat()
+    
+    /**
+     * When Humpty gets saved, score increase and new cars spawn.
+     */
+    public void save()
     {
         if(isTouching(Humpty.class))
         {
