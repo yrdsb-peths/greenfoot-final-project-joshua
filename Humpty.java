@@ -47,7 +47,7 @@ public class Humpty extends Actor
         MyWorld world = (MyWorld) getWorld();
         if(getY() >= world.getHeight())
         {
-            world.gameOver();
+            world.youWin();
         }
         
         // Animate Humpty

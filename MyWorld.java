@@ -56,6 +56,15 @@ public class MyWorld extends World
     }
     
     /**
+     * Player Wins If Humpty Crosses Street Without Help 
+     */
+    public void youWin()
+    {
+        Label youWinLabel = new Label("YOU WIN!", 100);
+        addObject(youWinLabel, 300, 200);
+    }
+    
+    /**
      * Increase Score
      */
     public void increaseScore()

@@ -50,9 +50,12 @@ public class StartScreen extends World
         Label label4 = new Label("PRESS SPACE TO START", (40));
         addObject(label4,308,311);
         label4.setLocation(319,315);
-        Label label5 = new Label("Hint: Be Patient When Saving Humpty From Cars", (30));
+        Label label5 = new Label("Be Patient. Don't Get Hit!", (30));
         addObject(label5,304,232);
         label5.setLocation(311,232);
         label5.setLocation(311,232);
+        Label label6 = new Label("Some people are not worth saving.", (30));
+        addObject(label6,295,264);
+        label6.setLocation(308,264);
     }
 }
