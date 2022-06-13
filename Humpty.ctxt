@@ -2,5 +2,10 @@
 comment0.target=Humpty
 comment0.text=\r\n\ Food\ for\ Hero.\r\n\ \r\n\ @author\ (Joshua)\ \r\n\ @version\ (June\ 2022)\r\n
 comment1.params=
-comment1.target=void\ act()
-numComments=2
+comment1.target=Humpty()
+comment1.text=\r\n\ Constructor\ -\ Code\ runs\ one\ time\ when\ object\ is\ created\r\n
+comment2.params=
+comment2.target=void\ animateHumpty()
+comment3.params=
+comment3.target=void\ act()
+numComments=4

@@ -65,13 +65,20 @@ public class MyWorld extends World
     }
     
     /**
+     * Reset Score
+     */
+    public void decreaseScore()
+    {
+        scoreLabel.setValue(score - 1);
+    }
+    /**
      * Spawn ramdom Humpty
      */
     public void createHumpty()
     {        
         // Humpty Object
         Humpty humpty = new Humpty();
-        int x = Greenfoot.getRandomNumber(600);
+        int x = Greenfoot.getRandomNumber(300) + 250;
         int y = 0;
         addObject(humpty, x, y);
     }
