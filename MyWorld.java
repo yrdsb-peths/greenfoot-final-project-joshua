@@ -62,6 +62,10 @@ public class MyWorld extends World
     {
         score++;
         scoreLabel.setValue(score);
+        if(score % 5 == 0)
+        {
+            level += 0.1;
+        }
     }
     
     /**
@@ -78,6 +82,7 @@ public class MyWorld extends World
     {        
         // Humpty Object
         Humpty humpty = new Humpty();
+        humpty.setSpeed(level);
         int x = Greenfoot.getRandomNumber(300) + 250;
         int y = 0;
         addObject(humpty, x, y);

@@ -48,7 +48,6 @@ public class Humpty extends Actor
         if(getY() >= world.getHeight())
         {
             world.gameOver();
-            world.removeObject(this);
         }
         
         // Animate Humpty
@@ -59,7 +58,12 @@ public class Humpty extends Actor
         {
             world.decreaseScore();
             world.removeObject(this);
-            
+            world.createHumpty();
         }
+    }
+    
+    public void setSpeed(int spd)
+    {
+        speed = spd;  
     }
 }
